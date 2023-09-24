@@ -1,0 +1,126 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/index.css">
+        <title>Mental Health Support</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="containerrrr">
+                    <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Happy Helpers</h1>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="jod"><a href="#none"></a></li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <!-- <button class="btn" onclick="toggleLoginForm()">login<a href="/parthy/login.html"></a></button>
+                        <button class="btn" onclick="toggleLoginForm()">Sign Up<a href="/parthy/login.html"></a></button> -->
+                        <a href="/html/login.html" target="_blank" class="btn">login</a>
+                        <a href="/html/signup.html" target="_blank" class="btn">sing up</a>
+                    </div>
+                    
+                    <div id="login-form" style="display: none;">
+                        
+                    </div>
+                    
+                    <div id="signup-form" style="display: none;">
+                        <!-- Your sign-up form HTML here -->
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>    
+
+    <section id="home" class="hero" >
+        <div class="container">
+            <h2 style="color: #898989;">Your Mental Well-being Matters</h2>
+            <p>Find the support you need to lead a healthy, happy life.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="containerrr">
+            <h2>Our Services</h2>
+            <div class="service" onclick="openCounselingPage()">
+                <h3>Counseling</h3>
+                <p>Our experienced counselors are here to help you navigate life's challenges.</p>
+            </div>
+            <div class="service" onclick="openSupportGroupsPage()">
+                <h3>Support Groups</h3>
+                <p>Connect with others who understand and share your experiences.</p>
+            </div>
+            <div class="service" onclick="openSelfCareResourcesPage()">
+                <h3>Self-Care Resources</h3>
+                <p>Explore our library of self-help articles, videos, and exercises.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="bg-light">
+        <div class="containeer">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">Helpful Resources</h2>
+            <p>Discover a wealth of resources to improve your mental well-being.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="ccontainer">
+            <!-- <h2 class="section-title">Contact Us</h2> -->
+            <p class="section-description">If you have questions or need support, feel free to reach out to us.</p>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder ="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer style="background-image: linear-gradient(#818589,#5c5656);">
+        <div class="conttainer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="https://github.com/hemant757" target="_blank">
+                        <i class="fa fa-github" style="font-size:40px;color: white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hemant.8955/"target="_blank">
+                        <i class="fa fa-instagram"  style="font-size:40px;color: white"></i>
+    
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100070603720006"target="_blank">
+                        <i class="fa fa-facebook"  style="font-size:40px;color: white"></i>
+    
+                    </a>
+                    <a href="https://www.linkedin.com/in/hemant-jangir-183b6924b/"target="_blank">
+                        <i class="fa fa-linkedin"  style="font-size:40px;color: white"></i>
+                    </a>
+                    <br>
+                </div>
+                
+                <p style="margin-left: 400px ;">&copy; 2023 Mental Health Support</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/mental health/script.js"></script>
+</body>
+</html>

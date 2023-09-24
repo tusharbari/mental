@@ -1,0 +1,485 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin-top: 0;
+
+    padding: 0px;
+   
+}
+/* Reset some default styles */
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the header */
+header {
+    background-color: #4f5861; /* Darker background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    font-family: Arial, sans-serif; /* Improved font */
+}
+
+/* Add animation to the header */
+header h1 {
+    font-size: 36px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Create fade-in animation */
+@keyframes fadeIn {
+    
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style the navigation menu */
+nav ul {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+   
+}
+
+/* nav ul li {
+    margin: 0 0px;
+} */
+
+nav ul li a {
+    font-size: 18px;
+    color: #d8d1d1;
+    font-family: inherit;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    
+    margin-left: 20px;
+    
+    
+  
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  nav ul li a:focus,
+  nav ul li a:hover {
+    color: #fff;
+  }
+  
+  nav ul li a:focus:after,
+  nav ul li a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  nav ul li a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+
+
+/* Style the authentication buttons */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+   
+
+.login-button:hover, .signup-button:hover {
+    background-color: #e67e22;
+}
+/* Style the section */
+/* Style the hero section */
+/* Style the hero section */
+/* Style the hero section */
+.hero {
+    background-image:linear-gradient(to bottom,#4f5861,#818589);
+    color: #898989; /* Text color */
+    text-align: center;
+    padding: 100px 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the container within the hero section */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url(/img/HAHA.JPG); 
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px); /* Initial animation state */
+    opacity: 0; /* Initial animation state */
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Style the hero title */
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Style the hero description */
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Style the call-to-action button */
+.btn {
+    --border-color: linear-gradient(-45deg, #36413e, #5D5E60, #8D8D92);
+    --border-width: .125em;
+    --curve-size: .5em;
+    --blur: 30px;
+    text-decoration: none;
+    --bg: #080312;
+    --color: #ffd2d2;
+    color: var(--color);
+      /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: .5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    clip-path: polygon(
+              /* Top-left */
+              0% var(--curve-size),
+  
+              var(--curve-size) 0,
+              /* top-right */
+              100% 0,
+              100% calc(100% - var(--curve-size)),
+  
+              /* bottom-right 1 */
+              calc(100% - var(--curve-size)) 100%,
+              /* bottom-right 2 */
+              0 100%);
+    transition: color 250ms;
+  }
+  
+  .btn::after,
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%
+    }
+  
+    50% {
+      background-position: 70% 100%
+    }
+  
+    100% {
+      background-position: 31% 0%
+    }
+  }
+  
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+              /* Top-left */
+              var(--border-width) 
+              calc(var(--curve-size) + var(--border-width) * .5),
+  
+              calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+  
+              /* top-right */
+              calc(100% - var(--border-width)) 
+              var(--border-width),
+  
+              calc(100% - var(--border-width)) 
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+  
+              /* bottom-right 1 */
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+              /* bottom-right 2 */
+              var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+  }
+  
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+                  /* Top-left */
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      
+                  calc(100% - var(--border-width))
+  
+                  var(--border-width),
+      
+                  /* top-right */
+                  calc(100% - var(--border-width))
+  
+                   var(--border-width),
+      
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+                  /* bottom-right 1 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                  calc(100% - var(--border-width)),
+  
+                  /* bottom-right 2 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                  calc(100% - var(--border-width)));
+    transition: 200ms;
+  }
+  
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+
+/* Style the Services section */
+/* Style the Services section */
+#services {
+    text-align: center;
+    padding: 100px 0;
+     background-image: linear-gradient(to bottom,#818589,#A9A9A9); 
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+.service {
+    background-color: #e1e1e1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+    animation: fadeInUp 1s ease 0.5s; /* Add a delay to the fade-in animation */
+    text-align: center; /* Align text to the left */
+}
+
+.service:hover {
+    transform: translateY(-5px); /* Add a slight upward lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add a box shadow on hover for elevation effect */
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #5c3d4e; /* Service title color */
+}
+
+.service p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #777; /* Service description color */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style the Resources section */
+#resources{
+    height: 150px;
+    font-size: 1.2em;
+    background-image: linear-gradient(to bottom,#A9A9A9,#C0C0C0); 
+}
+
+
+/* Style the container within the Resources section */
+
+
+/* Style the section title */
+
+
+/* Style the section description */
+
+.containeer{
+    text-align: center;
+}
+/* Style the "Contact Us" button */
+
+
+/* Add animation to the Resources section */
+.resources-section .container {
+    animation: fadeInUp 1s ease; /* Add a fade-in animation */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style the Contact Us section */
+.contact-section {
+    padding: 0px 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the container within the Contact Us section */
+.contact-section .ccontainer {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    background-image: linear-gradient(to bottom,#C0C0C0,#818589); 
+}
+
+/* Style the section title */
+/*  */
+
+/* Style the section description */
+.section-description {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+/* Style the contact form */
+
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 30%;
+    padding: 10px;
+    border: 3px solid #000000;
+    
+    background-image: linear-gradient(to right,#898989,#C0C0C0);
+    border-radius: 5px;
+    font-size: 16px;
+}
+::placeholder{
+    color: black;
+    opacity: 0.8;
+}
+
+/* Style the "Send Message" button */
+.form-group button {
+    display: inline-block;
+    background-color: #f7ae40;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+        background-color: #e67e22;
+    }
+
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style the footer */
+footer {
+    background-color: #818589;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Style the container within the footer */
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Style the footer content */
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the social icons */
+.footer-logo a {
+    font-size: 40px;
+    color: white;
+    margin-right: 20px; /* Add spacing between logos */
+    text-decoration: none;
+}
+
+/* Style the copyright text */
+.copyright p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Add hover effect to social icons */
+.footer-logo a:hover {
+    color: #ff9900;
+}

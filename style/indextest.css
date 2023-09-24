@@ -1,0 +1,88 @@
+
+body {
+   background-color: #49393b;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Center the content */
+div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+   
+}
+
+/* Style for the title */
+.tests{
+   
+   
+    font-size: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: #abcdef;
+    
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: rgb(246, 19, 19);
+  }
+  
+  .cards .red {
+    background-image: linear-gradient(to right,#adfcf9,#89A894);
+  }
+  
+  .cards .blue {
+    background-image: linear-gradient(to right,#adfcf9,#89A894);
+  }
+  
+  .cards .green {
+    background-image: linear-gradient(to right,#adfcf9,#89A894);
+  }
+  .cards .yellow {
+    background-image: linear-gradient(to right,#adfcf9,#89A894);
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 75px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+  .cards a{
+    text-decoration: none;
+    color: #341C1C;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
